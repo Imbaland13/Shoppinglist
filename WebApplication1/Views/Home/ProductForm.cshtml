@@ -1,0 +1,28 @@
+﻿@model WebApplication1.Models.Product
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width"/>
+        <title>Products</title>
+    </head>
+    <body>
+		<div>
+			This is the Productform.
+		</div>
+        <form>
+		<div>
+			<label asp-for="Name">Enter Product</label>
+			<input asp-for="Name" />
+		</div>
+		<div>
+			<label asp-for="Number">Enter Count</label>
+			<input asp-for="Number" />
+		</div>
+		<button type="submit">Submit Shoppinglist</button><br />
+		<a asp-action="ShoppingList">Show Shoppinglist</a>
+	</form>      
+    </body>
+</html>
